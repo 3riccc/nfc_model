@@ -4,12 +4,12 @@ This repository will contain the PyTorch implementation of:
 <br>
 
 **Network Information Dynamics Renormalization Group**<br>
-Zhang Zhang<sup>\*</sup>, Arsham Ghavasieh, Jiang Zhang, Manlio De Domenico<sup>\*</sup>(<sup>\*</sup>: Corresponding author) <br>
+Zhang Zhang<sup>\*</sup>, Arsham Ghavasieh, Jiang Zhang, Manlio De Domenico<sup>\*</sup><br>
 
 <sup>\*</sup>(<sup>\*</sup>: Corresponding author) <br>
 [Download PDF](https://www.researchsquare.com/article/rs-3503708/v1)<br>
 
-<img src="./architecture.png" width="800px" alt="">
+<img src="./architecture.png" width="600px" alt="">
 
 <br>
 
