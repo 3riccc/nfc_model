@@ -1,4 +1,4 @@
-# netIDRG: Network Information Dynamics Renormalization Group
+# netIDRG: Network Information Dynamics Renormalization Group Combines Statistical Physics and Machine Learning
 
 This repository will contain the PyTorch implementation of:
 <br>
@@ -24,13 +24,16 @@ Information dynamics is vital for many complex systems with networked backbones,
 - Pytorch 2.0.1
 - torch_geometric 2.4.0
 
-### To Understand how our model works, please see this tutorial:
+### To start fast, please see this tutorial:
 
-[Tutorial](https://github.com/3riccc/netIDRG/blob/main/Tutorial_For_A_BA_Network_Renormalization.ipynb)
+[Tutorial](https://github.com/3riccc/netIDRG/blob/main/tutorial_for_a_fast_start_on_BA_net_renormalization.ipynb)
 
 
 ### Cite
 If you use this code in your own work, please cite our paper:
 ```
 Zhang, Z., Ghavasieh, A., Zhang, J., & De Domenico, M. (2023). Network Information Dynamics Renormalization Group.
+
 ```
+
+Due to the size limitation by github, we can not upload the lage dataset include all the real-world networks(and we are working on it), for now if you want to replicate our experiment about one model on many real-world networks, please email me and I'll send you the data.
