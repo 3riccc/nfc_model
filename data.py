@@ -49,7 +49,9 @@ def get_feature(G):
     return torch.from_numpy(normed_feas)
 
 #  get the partition function
-def get_zt(padj,ts):
+def get_zt(padj):
+#     padj = padj*(1-torch.eye(padj.shape[0]).to(device))
+    ts = [0.01,0.02,0.04,0.08,0.16,0.32,0.64,1.28,2.56,5.12,10.24]
     cal_points = len(ts)
     ts = torch.tensor(ts).unsqueeze(1).repeat(1,padj.shape[0]).to(device)
     
@@ -60,7 +62,22 @@ def get_zt(padj,ts):
     evl = evl.unsqueeze(0).repeat(cal_points,1)
     
     zts = torch.exp(-evl*ts)
-    zts = (torch.sum(zts,dim=1)-0.999) / (padj.shape[0]-0.999)
+    zts = torch.sum(zts,dim=1) / padj.shape[0]
+    return zts
+
+#  get the partition function
+def get_zt_ts(padj,ts):
+    cal_points = len(ts)
+    ts = torch.tensor(ts).unsqueeze(1).repeat(1,padj.shape[0]).to(device)
+    
+    D = torch.sum(padj,dim=1).unsqueeze(1).repeat(1,padj.shape[0])
+    D = D*torch.eye(D.shape[0]).to(device)
+    L = D-padj
+    evl,evc = torch.linalg.eig(L)
+    evl = evl.unsqueeze(0).repeat(cal_points,1)
+    
+    zts = torch.exp(-evl*ts)
+    zts = torch.sum(zts,dim=1) / padj.shape[0]
     return zts
 
 
