@@ -27,10 +27,12 @@ Information dynamics plays a crucial role in complex systems, from cells to soci
 ### To start fast, please see the following tutorials:
 
 - With this tutorial you can easily train a model to coarse grain your network data
-[Tutorial1](https://github.com/3riccc/nfc_model/blob/main/tutorial_for_a_fast_start_on_BA_net_renormalization.ipynb)
+
+[Tutorial_1](https://github.com/3riccc/nfc_model/blob/main/tutorial_for_a_fast_start_on_BA_net_renormalization.ipynb)
 
 - With this tutorial you can load the pre-trained model to coarse grain your network data
-[Tutorial1](https://github.com/3riccc/nfc_model/blob/main/load_pre_trained_model_and_apply.ipynb)
+
+[Tutorial_2](https://github.com/3riccc/nfc_model/blob/main/load_pre_trained_model_and_apply.ipynb)
 
 
 
